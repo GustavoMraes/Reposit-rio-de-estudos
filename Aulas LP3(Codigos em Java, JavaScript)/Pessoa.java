@@ -33,6 +33,8 @@ public LocalDate getNascimento(){
     return nascimento;
 }
 
+//MÉTODO ToSring
+
 public String toString(){
     return "[nome: "+nome+ " nascimento: "+ nascimento+"]";
 }

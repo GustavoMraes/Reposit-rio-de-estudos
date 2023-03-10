@@ -33,7 +33,38 @@ public class Aviao {
 
     //TO STRING
     public String toString(){
-        return "[ fabricante ="+ fabricante+" tipo: "+tipo +"]";
+        return "[ fabricante ="+ this.fabricante+" tipo: "+this.tipo +"]";
     }
     
+    //EQUALS 
+@Override
+    public boolean equals(Object obj){
+        if (this == obj)
+        return true;
+
+        if (obj==null)
+         return false;
+
+        
+        if (this.getClass() !=obj.getClass())
+            return false;
+
+        Aviao other = (Aviao) obj;
+
+        if (this.fabricante == null){
+            if (other.fabricante != null)
+        return false;
+        }        
+        else if (! this.fabricante.equals(other.fabricante))
+          return false;
+
+          if (this.tipo == null){
+            if (other.tipo != null)
+        return false;
+        }        
+        else if (! this.tipo.equals(other.tipo))
+          return false;
+
+        return true;         
+   } 
 }

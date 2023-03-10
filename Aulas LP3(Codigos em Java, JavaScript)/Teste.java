@@ -1,7 +1,7 @@
 public class Teste {
     public static void main(String[] args){
         System.out.println("Hello, World!");
-/*
+/* 
         Pessoa joaoCarlos = new Pessoa();
         Pessoa mariajoaquina = new Pessoa("Maria Joaquina", 3, 6, 1998);
         System.out.println(mariajoaquina.toString());
@@ -11,13 +11,20 @@ public class Teste {
         System.out.println(jose.toString());
         */
 
-        /*Funcionario antonio = new Funcionario("jose", 6, 3, 1990, "2334", "49823489");
-        System.out.println(antonio.toString());*/
+        //Funcionario antonio = new Funcionario("jose", 6, 3, 1990, "2334", "49823489");
+        //System.out.println(antonio.toString());
 
-        /*Aviao gol = new Aviao("asd", "oaisdjasod");
+        //Aviao gol = new Aviao("asd", "oaisdjasod");
+        //System.out.println(gol.toString());     
 
-        System.out.println(gol.toString());*/
+       /* Mobile m1 = new Mobile("Sansung", "e8");
+        Mobile m2 = new Mobile("Motorola", "e9");
+        System.out.println(m1.hashCode()); 
+        System.out.println(m2.hashCode());*/
+
         
+
+
 
 
 

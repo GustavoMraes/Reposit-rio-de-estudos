@@ -1,16 +1,17 @@
 public class Funcionario extends Pessoa{
     //ATRIBUTOS
-    private String rg;
-    
+    private String rg;    
     private String cpf;
 
     //CONSTRUTORES    
     public Funcionario(){
+        super();
         this.rg = "";
         this.cpf = "";
     }
     
     public Funcionario(String rg, String cpf){
+        super();
         this.rg = rg;
         this.cpf = cpf;
     }
@@ -20,6 +21,7 @@ public class Funcionario extends Pessoa{
         this.rg = rg;
         this.cpf = cpf;
     }
+    
 //GET E SET
     public String getRg() {
         return rg;

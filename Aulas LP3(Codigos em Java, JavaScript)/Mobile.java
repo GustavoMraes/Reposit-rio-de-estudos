@@ -43,24 +43,47 @@ public class Mobile {
     }
 
     //EQUALS
-    public boolean equalsMobile(Mobile obj){
+    @Override    
+    public boolean equals(Object obj){
         if (this == obj)
         return true;
 
         if (obj==null)
-        return false;
-
-        if(getClass() != obj.getClass())
-        return false;
-
-        Mobile other = (Mobile) obj;
-        //CONTINUAR COPIADO DAQUI
-
-
+         return false;
 
         
-return true;
+        if (this.getClass() !=obj.getClass())
+            return false;
 
+        Mobile other = (Mobile) obj;
 
-    }
+        if (this.modelo == null){
+            if (other.modelo != null)
+        return false;
+
+        }
+        else if (! this.modelo.equals(other.modelo))
+          return false;
+
+          if (this.marca == null){
+            if (other.marca != null)
+        return false;
+
+        }
+        else if (! this.marca.equals(other.marca))
+          return false;
+
+        return true;         
+   } 
+
+   //HASHCODE
+
+   @Override
+   public int hashCode(){
+    int primo = 31;
+    int resultado = 1;
+    resultado = resultado*primo + ((marca==null)?0:marca.hashCode());
+    resultado = resultado*primo + ((modelo==null)?0:modelo.hashCode());
+    return resultado;
+   }
 }
