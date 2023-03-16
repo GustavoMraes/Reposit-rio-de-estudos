@@ -104,6 +104,7 @@ public int hashCode(){
 }
 
     //TOSTRING
+    @Override
     public String toString(){
         return super.toString() + "[Modelo: "+ modelo + " Marca: "+ marca+ " Cor: "+cor; 
 }

@@ -1,3 +1,6 @@
+import Pessoa;
+
+package dia8_de_marco;
 public class Aluno extends Pessoa{
 
     private String prontuario;
