@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document </title>
+</head>
+<body>
+    <table style="border: 1px solid black; border-collapse: collapse;"> 
+        Tag tr = linha da tabela<br>
+        Tag th = célula de título <br>
+        Tag td = cécula padrão da tabela<br>
+        Usar border-collapse para ignorar os limites do tamanho dos elementos e fazer as linhas a partir do espaço da tabela<br>
+        Para definir a borda, primeiro digite a quantidade de ouxels da tabela, depois a forma da tabela, e depois a cor <br>
+
+        <tr> 
+            <th style="border: 1px solid black"> Nome </th>
+            <th style="border: 1px solid black"> Idade </th>
+            <th style="border: 1px solid black"> Nota </th>
+        </tr>
+
+        <tr> 
+            <td> João </td>
+            <td> 25 </td>
+            <td> 4.5 </td>
+        </tr>
+
+        <tr> 
+            <td> Maria </td>
+            <td> 24 </td>
+            <td> 9.4 </td>
+
+        </tr>
+
+
+    </table>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th> Time </th>
+                <th>Pontos</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td style = "text-align: center; height:50px; vertical-align: bottom"> Corithians</td>
+                    <td style = "text-align: center; height:50px; vertical-align: bottom"> 50</td>
+                </tr>
+                <tr>
+                    <td style = "text-align: center; height:50px; vertical-align: bottom"> Palmeiras</td>
+                    <td style = "text-align: center; height:50px; vertical-align: bottom">  30</td>
+                </tr>
+            </tbody>
+                <tfoot>
+                    <tr>
+                        <td style = "text-align: center; height:50px; vertical-align: bottom"> Jogos </td>
+                        <td style = "text-align: center; height:50px; vertical-align: bottom"> 20 </td>
+                    </tr>
+                </tfoot>            
+        
+    </table>
+
+    <br>colpsan = Quantidade de colunas que a célula ocupa <br>
+    rowpsan = Quantidade de linhas que a célula ocupa <br><br>
+    <table style = "border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th colspan = "2" style="border: 1px solid black;"> 2 colunas</th>
+                <th style="border: 1px solid black;"> 1 coluna</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td th rowspan = "2" style="border: 1px solid black;"> 2 Linhas</td>
+                <td style="border: 1px solid black;">1 Linha</td>
+                <td style="border: 1px solid black;">1 Linha</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;"> 1 Linha</td>
+                <td style="border: 1px solid black;"> 1 Linha</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+
+        
+    </table>
+</body>
+</html>
