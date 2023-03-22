@@ -1,4 +1,3 @@
-package dia8_de_marco;
 public class Aviao {
     //ATRIBUTOS
     private String fabricante;

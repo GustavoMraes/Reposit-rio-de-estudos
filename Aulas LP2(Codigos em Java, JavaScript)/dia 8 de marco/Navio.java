@@ -35,8 +35,7 @@ public class Navio {
         this.funcionamento = funcionamento;
     }
 
-    //EQUALS
-
+    
      //EQUALS
      @Override    
      public boolean equals(Object obj){

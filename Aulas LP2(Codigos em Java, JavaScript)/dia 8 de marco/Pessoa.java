@@ -21,14 +21,6 @@ public class Pessoa {
     
 
 //MÉTODOS GET E SET
-
-public String getNome(){
-    return this.nome;
-}
-public void setNome(String nome){
-    this.nome = nome;
-}
-
 public LocalDate getNascimento(){
     return nascimento;
 }

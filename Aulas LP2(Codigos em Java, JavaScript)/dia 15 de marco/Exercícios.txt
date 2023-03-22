@@ -14,12 +14,15 @@ método add(): Adiciona um elemento à lista
 método clear(): Limpa todos os elementos da lista
 método isEmpty(): Retorna se não há elemento na lista 
 método remove(): Remove o elemento específico
-método size(): Retorna se há elemento na lista
+método size(): Retorna a quantidade de elementos da lista
 
 
 3 - Escreva qual é a funcionalidade da classe Objects. Em qual versão da linguagem Java foi incluída a classe Objects. Faça um programa Java que demonstre o funcionamento da classe Objects.
 
+A classe object é uma calsse pai de todas as classes, das quais herdam funcionalidades e métodos básicos em Java. A classe Object foi implementada na versão 7 do java
+
 4 - Escreva um programa Java com uma função principal main com um ArrayList de inteiros chamado valores. Peça ao usuário para informar 5 valores inteiros e adicione-os individualmente no ArrayList. Em seguida imprima os elementos do ArrayList, de forma individual, usando o laço for.
+
 
 5 - Faça um programa Java que armazene 10 valores aleatórios em um ArrayList. Em seguida o programa deve imprimir o maior e o menor valor armazenados no ArrayList.
 
