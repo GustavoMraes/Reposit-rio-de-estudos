@@ -1,0 +1,15 @@
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\bin\Debug\net6.0\classes.exe
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\bin\Debug\net6.0\classes.deps.json
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\bin\Debug\net6.0\classes.runtimeconfig.json
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\bin\Debug\net6.0\classes.dll
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\bin\Debug\net6.0\classes.pdb
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\classes.csproj.AssemblyReference.cache
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\classes.AssemblyInfoInputs.cache
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\classes.AssemblyInfo.cs
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\classes.csproj.CoreCompileInputs.cache
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\classes.dll
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\refint\classes.dll
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\classes.pdb
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\classes.genruntimeconfig.cache
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Estudo para prova\classes\obj\Debug\net6.0\ref\classes.dll

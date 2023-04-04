@@ -1,0 +1,15 @@
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\bin\Debug\net6.0\Aula dia 21 de março.exe
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\bin\Debug\net6.0\Aula dia 21 de março.deps.json
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\bin\Debug\net6.0\Aula dia 21 de março.runtimeconfig.json
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\bin\Debug\net6.0\Aula dia 21 de março.dll
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\bin\Debug\net6.0\Aula dia 21 de março.pdb
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\Aula dia 21 de março.csproj.AssemblyReference.cache
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\Aula dia 21 de março.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\Aula dia 21 de março.AssemblyInfoInputs.cache
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\Aula dia 21 de março.AssemblyInfo.cs
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\Aula dia 21 de março.csproj.CoreCompileInputs.cache
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\Aula dia 21 de março.dll
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\refint\Aula dia 21 de março.dll
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\Aula dia 21 de março.pdb
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\Aula dia 21 de março.genruntimeconfig.cache
+C:\Users\rmora\Desktop\Gustavo\Repositório_de_estudos\Aulas LP3(Códigos em C#)\Aula dia 21 de março\obj\Debug\net6.0\ref\Aula dia 21 de março.dll

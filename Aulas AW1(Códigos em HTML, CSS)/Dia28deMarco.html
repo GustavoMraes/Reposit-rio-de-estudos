@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+
+        <fieldset>     
+            <legend> Questionário </legend>   
+
+            <fieldset>     
+                <legend> Cadastro </legend>  
+                <label for ="ID_email"> E-mail: </label>
+                <input
+                 type="email"
+                  id="ID_email" 
+                  name="ID_email"/>
+                  <br> <br>
+                <label for ="ID_password"> Senha: </label>
+                <input
+                 type="password"
+                  id="ID_senha" 
+                  name="ID_senha"/> 
+            </fieldset>
+
+
+            <fieldset>     
+                <legend> Dados Pessoais </legend>
+                <label for ="ID_nome"> Nome: </label>
+                <input
+                 type="text"
+                  id="ID_nome" 
+                  name="ID_nome"/>
+                  <br> <br>
+                  
+                <label for ="ID_idade"> Idade: </label>
+                <input
+                 type="number"
+                  id="ID_idade" 
+                  name="ID_idade"/> 
+                  <br><br>
+
+                <label for ="ID_telefone"> Telefone: </label>
+                <input
+                 type="tel"
+                  id="ID_telefone" 
+                  name="ID_telefone"/> 
+                  <br><br>
+
+                <label for ="ID_nascimento"> Data de nascimento: </label>
+                <input
+                 type="date"
+                  id="ID_nascimento" 
+                  name="ID_nascimento"/> 
+                  <br> <br>
+
+
+                <label for ="ID_genero"> Genero: </label>
+                <input
+                 type="radio"
+                  id="ID_genero" 
+                  name="ID_genero"/>
+                  <label for = "ID_masculino"> Masculino</label>
+
+                  
+                <input
+                 type="radio"
+                  id="ID_genero" 
+                  name="ID_genero"/>
+                  <label for = "ID_masculino"> Feminino</label>
+
+                  <input
+                 type="radio"
+                  id="ID_genero" 
+                  name="ID_genero"/>
+                  <label for = "ID_masculino"> Outros</label>
+
+                  <input
+                 type="radio"
+                  id="ID_genero" 
+                  name="ID_genero"/>
+                  <label for = "ID_masculino"> Prefiro não informar</label>               
+            </fieldset>                 
+
+            <fieldset>     
+                <legend> Preferências </legend>   
+
+                <label for="ID_celular"> Marca de celular que você usa: </label>
+            <select name="Marca-celular" id="ID_celular"> 
+                <option value="Sansung">Sansung</option>
+                <option value="Apple">Apple</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Nokia">Nokia</option>
+            </select>
+            <br><br>
+
+            <label for="ID_navegador"> Escolher um navegador que você usa: </label>
+            <input
+            type="text" 
+            id = "ID_navegador"
+            name = "ID_navegador"
+            list = "navegadores"
+            >
+            
+            <datalist id = "navegadores">
+                <option value="Google Chrome"> Google Chrome</option>
+                <option value="FireFox"> FireFox</option>
+                <option value="Opera GX"> Opera GX</option>
+                <option value="Microsoft Edge"> Microsoft Edge</option>
+                <option value="Internet Explorer"> Internet Explorer</option>
+            </datalist>
+            <br><br>
+
+            <label for = "ID_musica"> Exolha os ritmos musicais que você escuta:</label>  
+
+                <input
+                type="checkbox"
+                id="ID_musica" 
+                name="ID_Rock"/>
+                <label for = "ID_Rock"> Rock</label>
+
+                <input
+                type="checkbox"
+                id="ID_musica" 
+                name="ID_Pop"/>
+                <label for = "ID_Pop"> Pop</label> 
+                
+                <input
+                type="checkbox"
+                id="ID_musica" 
+                name="ID_Funk"/>
+                <label for = "ID_Funk"> Funk</label>
+
+                <input
+                type="checkbox"
+                id="ID_musica" 
+                name="ID_MPB"/>
+                <label for = "ID_MPB"> MPB</label>
+
+                <input
+                type="checkbox"
+                id="ID_musica" 
+                name="ID_Sertanejo"/>
+                <label for = "ID_Sertanejo"> Sertanejo</label>         
+            </fieldset>
+           
+            <fieldset>     
+                <legend> Comentários </legend>  
+                <textarea name="Comentários" id="ID_comentario" cols="75" rows = "7" placeholder="Digite um comentário"></textarea> 
+            </fieldset> 
+            
+            <button type="reset"> Resetar </button>
+            <button type="submit"> Enviar </button>
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>

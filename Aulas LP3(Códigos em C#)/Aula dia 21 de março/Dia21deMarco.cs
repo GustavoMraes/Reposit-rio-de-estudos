@@ -19,6 +19,8 @@ for (var index = 0; index<=numeros.Count-1; index++)
 numeros.ForEa´ch(numero => Console.WriteLine(numero + ""));
 
 */
+
+
 var nomes = new List<string>{"Renato", "Ana", "Felipe", "Claudia"};
 foreach(var nome in nomes){
     Console.WriteLine($"Olá {nome.ToUpper()}");
