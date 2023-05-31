@@ -1,0 +1,3 @@
+2 – Quais são os principais métodos das classes abstratas Reader e Writer. Descreva como funcionam os métodos.
+
+Os principal métpdo do Reader é o read(), e o principal método do Write é o write().    
