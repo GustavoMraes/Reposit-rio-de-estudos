@@ -1,3 +1,4 @@
+package ExercicioBiblia;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -54,16 +55,6 @@ public class main
             lista.add('9');
             lista.add('0');
 
-
-
-
-
-
-
-
-
-
-
             out = new FileWriter("resultado.txt");
             in = new FileReader (scan.nextLine());
 
@@ -73,10 +64,10 @@ public class main
                 caractere = (char)c;
 
                 if (caractere=='à')
-                quantidadeCrases += 1;
+                    quantidadeCrases += 1;
 
                 if(!lista.contains(caractere))
-                biblia = biblia+caractere; 
+                    biblia = biblia+caractere; 
 
             }
             st = new StringTokenizer(biblia);
@@ -87,41 +78,41 @@ public class main
                 palavra = st.nextToken();
                 palavra = palavra.toLowerCase();
 
-                //Verificações
+               
                 if(palavra.length()<=3)
-                quantidadePalavrasPequenas = quantidadePalavrasPequenas+1;
+                    quantidadePalavrasPequenas = quantidadePalavrasPequenas+1;
 
                 if(palavra.endsWith("ão"))
-                terminaAO += 1;
+                    terminaAO += 1;
 
 
                 if (palavra.charAt(0) == 'a')
-                palavrasComecamA += 1;
+                    palavrasComecamA += 1;
 
                 if (palavra.charAt(0) == 'e')
-                palavrasComecamE += 1;
-                
+                    palavrasComecamE += 1;
+                    
                 if (palavra.charAt(0) == 'i')
-                palavrasComecamI += 1;
+                    palavrasComecamI += 1;
 
                 if (palavra.charAt(0) == 'o')
-                palavrasComecamO += 1;
+                    palavrasComecamO += 1;
 
                 if (palavra.charAt(0) == 'u')
-                palavrasComecamU += 1;
+                    palavrasComecamU += 1;
 
 
-                //COLOCAR NO MAPA
+              
                 mapa.put(st.nextToken(), 1);;
 
-                //Substituir o contador para aumentar
+                
                 if(palavra.length()>3)  
                 {              
-                if(mapa.containsKey(palavra))
-                {
-                    contagem = mapa.get(palavra)+1;
-                    mapa.put(st.nextToken(), contagem);
-                }  
+                    if(mapa.containsKey(palavra))
+                        {
+                            contagem = mapa.get(palavra)+1;
+                            mapa.put(st.nextToken(), contagem);
+                        }  
                 }    
                 
                 
@@ -130,9 +121,6 @@ public class main
                         .stream()
                         .sorted(Map.Entry.comparingByValue())
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
-
-
-
             } 
 
             System.out.println("Quantidade de palavras de até 3 letras: "+ quantidadePalavrasPequenas + "\nQuantidade de palavras que começam com A:" + palavrasComecamA+ "\nQuantidade de palavras que começam com E:" + palavrasComecamE + "\nQuantidade de palavras que começam com I:" + palavrasComecamI + "\nQuantidade de palavras que começam com O:" + palavrasComecamO + "\nQuantidade de palavras que começam com U:" + palavrasComecamU );
@@ -140,36 +128,24 @@ public class main
             System.out.println("Quantidade de crases: " + quantidadeCrases);    
             System.out.println("Quantidade de palavras que termia ÃO: " + terminaAO);
 
-
-
             int w = 0;
+            int count=5;
             for (String a : mapaOrdenado.keySet()){
 
-                if( w++ <= 5 ) 
+                if( w++ < 5 ) 
                 {
-                     System.out.println("Palavra: "+ a + " - " +mapaOrdenado.get(a));
+                     System.out.println("Palavra "+w+" que mais menos apareceu: "+ a + " - " +mapaOrdenado.get(a));
                      System.out.println("------------------");
                 }
-                if (w>= (mapaOrdenado.size()-5))
+                if (w> (mapaOrdenado.size()-5))
                 {
-                System.out.println("Palavra: "+ a + " - " +mapaOrdenado.get(a));
-                System.out.println("------------------");
+                	
+                    System.out.println("Palavra: "+count+" que mais apareceu:"+ a + " - " +mapaOrdenado.get(a));
+                    System.out.println("------------------");
+                    count-=1;
                 }
             }
-
-           
-
-            
-
-
-
-
-            
-            
         }   
-
-      
-
 
        catch (Exception e)
         {
@@ -181,7 +157,9 @@ public class main
             {
                 out.close();
                 in.close();
-            } catch (Exception e) {
+                scan.close();
+            } catch (Exception e)
+            {
                 e.printStackTrace();
             }
         }
