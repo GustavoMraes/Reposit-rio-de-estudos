@@ -1,0 +1,2 @@
+-- SQLite
+Create table Computers(Id int, Ram varchar(255), Processor varchar(255));
