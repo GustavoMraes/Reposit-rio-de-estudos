@@ -164,6 +164,16 @@ ORDER BY C.Nome;
 
 -- Exercício 4: Liste os nomes dos produtos e a quantidade total de cada produto que foi comprada por clientes de uma cidade específica. Escolha uma cidade e exiba os resultados em ordem decrescente pela quantidade total vendida.
 
+SELECT P.Nome, SUM(D.Quantidade) AS QuantidadeComprada
+FROM Produtos P
+LEFT JOIN DetalhesDoPedido D ON D.Produto_ID = P.ID
+LEFT JOIN Pedidos Pe ON Pe.ID = D.Pedido_ID
+LEFT JOIN Clientes C ON C.ID = Pe.Cliente_ID
+WHERE C.Cidade = "São Paulo"
+GROUP BY P.ID
+ORDER BY QuantidadeComprada DESC;
+
+
 SELECT P.Nome, SUM(DetalhesDoPedido.Quantidade) AS Quantidade
 FROM Produtos P
 LEFT JOIN DetalhesDoPedido ON DetalhesDoPedido.Produto_ID = P.ID
@@ -195,12 +205,65 @@ ORDER BY Quantidade DESC;
 -- Exercício 5: Liste os nomes dos clientes que compraram produtos de uma categoria específica. Escolha uma categoria de produto e exiba os resultados em ordem alfabética pelo nome do cliente.
 
 SELECT C.Nome
+FROM ((((Clientes C
+INNER JOIN Pedidos P ON P.Cliente_ID = C.ID)
+INNER JOIN DetalhesDoPedido D ON D.Pedido_ID = P.ID)
+INNER JOIN Produtos PR ON D.Produto_ID = PR.ID)
+INNER JOIN Categorias ON PR.Categoria_ID = Categorias.ID)
+WHERE Categorias.Nome = "Roupas";
+
+-- Exercício 6 Liste os nomes dos clientes que não fizeram pedidos.
+SELECT C.Nome, COUNT(P.ID) AS QuantidadeDePedidos
+FROM Clientes C
+LEFT JOIN Pedidos P ON C.ID = P.Cliente_ID
+GROUP BY C.ID
+HAVING QuantidadeDePedidos = 0;
+
+-- Exercício 7: Liste os produtos que foram comprados por pelo menos 3 clientes diferentes.
+
+SELECT P.Nome
+FROM Produtos P
+INNER JOIN DetalhesDoPedido D ON D.Produto_ID = P.ID
+INNER JOIN Pedidos Pe ON Pe.ID = D.Pedido_ID
+INNER JOIN Clientes C ON Pe.Cliente_ID = C.ID
+GROUP BY P.ID
+HAVING COUNT(C.ID) >= 3;
+
+-- Exercício 8: Liste os nomes dos clientes que compraram pelo menos um produto da categoria "Eletrônicos".
+
+SELECT C.Nome
 FROM Clientes C
 INNER JOIN Pedidos P ON P.Cliente_ID = C.ID
 INNER JOIN DetalhesDoPedido D ON D.Pedido_ID = P.ID
 INNER JOIN Produtos PR ON D.Produto_ID = PR.ID
 INNER JOIN Categorias ON PR.Categoria_ID = Categorias.ID
-WHERE Categorias.Nome = "Roupas";
+WHERE Categorias.Nome = "Eletrônicos"
+GROUP BY C.ID;
+
+-- Exercício 9: Liste os produtos que não foram comprados por nenhum cliente.
+
+SELECT P.Nome
+FROM Produtos P
+INNER JOIN DetalhesDoPedido D ON D.Produto_ID = P.ID
+INNER JOIN Pedidos Pe ON Pe.ID = D.Pedido_ID
+INNER JOIN Clientes C ON Pe.Cliente_ID = C.ID
+GROUP BY P.ID
+HAVING COUNT(C.ID) = 0;
+
+-- Exercício 10: Liste os clientes que compraram exatamente 2 produtos diferentes.
+
+SELECT C.Nome
+FROM Clientes C
+INNER JOIN Pedidos P ON P.Cliente_ID = C.ID
+INNER JOIN DetalhesDoPedido D ON D.Pedido_ID = P.ID
+INNER JOIN Produtos PR ON D.Produto_ID = PR.ID
+GROUP BY C.ID
+HAVING COUNT(PR.ID) = 2;
+
+
+
+
+
  
 
 
